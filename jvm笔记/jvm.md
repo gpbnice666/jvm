@@ -1273,7 +1273,7 @@ public class TLABArgsTest {
 
 ​					如果HandlePromotionFailure=true,那么会<font color=red>继续检查老年代最大可用连续空间是否大于历次晋升到老年代的对象平均大小</font>
 
-​							如果大于，测尝试进行一次Minor GC，但这次Minor GC依然是有分线的
+​							如果大于，测尝试进行一次Minor GC，但这次Minor GC依然是有风险的
 
 ​							如果小于，则改成进行一次Full GC
 
